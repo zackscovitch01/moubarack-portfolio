@@ -268,6 +268,14 @@ ul {
   margin-bottom: 0.25rem;
 }
 
+/* NAVBAR */
+
+.section-center {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -299,7 +307,6 @@ ul {
   padding: 0.75rem 1rem;
   text-align: center;
   transition: var(--transition);
-  display: block;
 }
 
 .nav-btn {
@@ -311,10 +318,12 @@ ul {
   transition: var(--transition);
 }
 
-.nav-btn:hover i {
+.nav-btn:hover {
   transform: rotate(90deg);
 }
 
-.nav-link li:hover {
+.nav-link:hover li {
   color: var(--primary-700);
+  background: var(--primary-100);
+  transform: translateX(5px);
 }
