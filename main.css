@@ -270,12 +270,6 @@ ul {
 
 /* NAVBAR */
 
-.section-center {
-  width: 90vw;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
 .nav-header {
   display: flex;
   align-items: center;
@@ -294,6 +288,10 @@ ul {
 
 .nav-links {
   margin-top: 0;
+}
+
+#show-links {
+  display: block;
 }
 
 #hide-links {
@@ -326,4 +324,29 @@ ul {
   color: var(--primary-700);
   background: var(--primary-100);
   transform: translateX(5px);
+}
+
+@media screen and (min-width: 976px) {
+  .nav-btn {
+    display: none;
+  }
+
+  #hide-links {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .section-center {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-link:hover li {
+    color: var(--primary-700);
+    background: transparent;
+  }
 }

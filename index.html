@@ -24,11 +24,16 @@
       <div class="section-center">
         <div class="nav-header">
           <h3>Moubarack <span>Bagoudou</span></h3>
-          <button type="button" class="nav-btn">
+          <button
+            id="toggle-btn"
+            type="button"
+            class="nav-btn"
+            onclick="showNavbar()"
+          >
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="hide-links">
           <a class="nav-link" href="about.html"><li>About</li></a>
           <a class="nav-link" href="experience.html"><li>Experience</li></a>
           <a class="nav-link" href="projects.html"><li>Projects</li></a>
@@ -36,5 +41,7 @@
         </ul>
       </div>
     </nav>
+
+    <script src="app.js"></script>
   </body>
 </html>
